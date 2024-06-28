@@ -1,0 +1,42 @@
+<WelcomeScreen>:
+    BoxLayout:
+        canvas.before:
+            Color:
+                rgba: 1,1,1,1
+            
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+
+        orientation: 'vertical'
+        
+        Label:
+            color: 0,0,0,1
+            text: 'Welcome Screen'
+
+<PresentationScreen>:
+    BoxLayout:
+        canvas.before:
+            Color:
+                rgba: 0,0,0,1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        Label
+            text: 'Presentation Screen'
+
+<LoginScreen>:
+    BoxLayout:
+        canvas.before:
+            Color:
+                rgba: 1,1,1,1
+            Rectangle
+                pos: self.pos
+                size: self.size
+        
+        Label:
+            color: 0,0,0,1
+            text: 'Login Screen'
+
